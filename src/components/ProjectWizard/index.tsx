@@ -51,7 +51,7 @@ const ProjectWizard = ({
       <CardContent className="space-y-4 min-h-[260px]">
         {isPending ? (
           <div className="flex justify-center items-center w-full h-[236px]">
-            <Loader className="animate-spin" />
+            <Loader className="animate-spin" data-testid="loader" />
           </div>
         ) : (
           renderStep()
